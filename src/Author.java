@@ -32,12 +32,12 @@ public class Author {
       return false;
     }
     Author author = (Author) o;
-    return Objects.equals(lastName, author.lastName);
+    return Objects.equals(firstName, author.firstName);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hashCode(lastName);
+    return Objects.hashCode(firstName);
   }
 }
 

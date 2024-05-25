@@ -43,16 +43,15 @@ public class Book {
       return false;
     }
     Book book = (Book) o;
-    return yearPublisher == book.yearPublisher;
+    return Objects.equals(title, book.title) && Objects.equals(author,
+        book.author);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hashCode(yearPublisher);
+    return Objects.hash(title, author);
   }
 }
-
-
 
 
 

@@ -11,14 +11,15 @@ public class App {
 
     System.out.println(tolstoy + ", " + buratino);
     System.out.println(pushkin + ", " + cockerel);
-
     System.out.println("pushkin.hashCode() = " + pushkin.hashCode());
     System.out.println("tolstoy.hashCode() = " + tolstoy.hashCode());
-
     System.out.println("pushkin.equals(tolstoy) = " + pushkin.equals(tolstoy));
     System.out.println(
         "pushkin.getLastName().equals(tolstoy.getLastName()) = " + pushkin.getLastName()
             .equals(tolstoy.getLastName()));
+    System.out.println(
+        "pushkin.getFirstName().equals(tolstoy.getFirstName()) = " + pushkin.getFirstName()
+            .equals(tolstoy.getFirstName()));
 
 
   }
